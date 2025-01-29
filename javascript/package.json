@@ -1,11 +1,22 @@
 {
-  "name": "brbitcoin",
-  "version": "0.1.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "",
-  "license": "ISC"
+    "name": "brbitcoin-sdk",
+    "version": "0.1.0",
+    "description": "Um SDK TypeScript leve para transações Bitcoin e gerenciamento de carteira.",
+    "main": "dist/index.js",
+    "scripts": {
+        "build": "tsc",
+        "start": "node dist/index.js",
+        "test": "echo \"Erro: nenhum teste especificado\" && exit 1"
+    },
+    "author": "Marcos Emilson",
+    "license": "MIT",
+    "dependências": {
+        "bitcoinjs-lib": "^6.1.0",
+        "bip32": "^2.0.6",
+        "bip39": "^3.0.4"
+    },
+    "devDependências": {
+        "typescript": "^5.0.0",
+        "@types/node": "^20.0.0"
+    }
 }
